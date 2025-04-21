@@ -1,0 +1,1047 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.HeaderSec{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 4000;
+}
+
+.HeaderSec .icon-search-header{
+    float: left;
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    padding: 6px 10px;
+}
+
+.HeaderSec .home-header{
+    padding-left: 20px;
+    color: white;
+    float: left;
+    line-height: 50px;
+    font-size: 22;
+}
+
+.search-header .search{
+    border: 0;
+    height: 25px;
+    width: 200px;
+    border-radius: 12.5px;
+}
+
+.search-header{
+    float: left;
+    position: absolute;
+    margin-left: 65px;
+    transform: translate(0, 50%);
+}
+
+.links-header{
+    list-style: none;
+    float: right;
+    margin: 0px 40px;
+    line-height: 50px;
+}
+
+.links-header li{
+    padding-right: 15px;
+    display: inline;
+
+}
+
+.links-header a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.HeaderSec a::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.HeaderSec a:hover::after{
+    width:100%;
+    transition: 0.5s;
+    background-color: gold;
+}
+
+.HeaderSec .drop-link-blog{
+    background-color: white;
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    border-radius: 12px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+}
+
+.list-link-blog:hover .drop-link-blog{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.list-link-blog{
+    position: relative;
+}
+
+.drop-link-blog li{
+    display: block;
+}
+
+.drop-link-blog li a{
+    color: rgb(128, 128, 128);
+}
+/* ----------------------------- End-HeaderSec ----------------------------- */
+
+.HomeSec{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/2025-kia-k4-front-3-4.webp) no-repeat center/cover;
+}
+
+.Overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.HomeContent{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.HomeContent h2{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.HomeContent p{
+    color: white;
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+}
+
+.HomeContent button{
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+}
+
+.HomeContent .btn2{
+    background-color: black;
+    color: white;
+}
+
+.HomeContent button:hover{
+    opacity: 0.5;
+}
+/* ------------------------- End-HomeSec ----------------------------- */
+
+
+.WelcomeSec{
+    width: 100%;
+    height:100vh;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.WelcomeSec .TitleWelcome{
+    font-size: 40px;
+    color: black;
+    position: relative;
+    padding-top: 70px;
+    margin-bottom: 90px;
+}
+
+.TitleWelcome::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.Container{
+    width: 90%;
+    margin: auto;
+    height: 250px;
+}
+
+
+.WelcomeService{
+    /* height: 100%; */
+    width: 30%;
+    padding: 20px 0px;
+    float: left;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: gray;
+    font-weight: bold;
+}
+.div1{
+    margin: 0 5% 0 5%;
+}
+
+.WelcomeService::after{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.WelcomeService:hover::after{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.WelcomeService i{
+    padding-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.WelcomeService h2{
+    color: black;
+}
+
+.WelcomeService a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+
+}
+
+.WelcomeService p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.WelcomeService:hover i, .WelcomeService:hover a{
+    color: rgb(80, 80, 80);
+}
+
+.WelcomeService:hover p{
+    color: black;
+}
+
+.WelcomeService:hover h2{
+    color: white;
+}
+/* --------------------- End-WelcomeSec ------------------------ */
+
+
+.FeatureSec{
+    background-color: rgba(128, 128, 128, 0.2);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.TitleFeature{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(128, 128, 128);
+    padding-top: 40px;
+    position: relative;
+    
+}
+
+.TitleFeature::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.ContainerFeature{
+    width: 80%;
+    height: 430px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.FeatureDiv{
+    width: 30%;
+    height: 193.5px;
+    float: left;
+    position: relative;
+}
+
+.FeatureSec .img2, .FeatureSec .img5{
+    margin: 0 5% 0 5%;
+}
+
+.FeatureSec .DivTop{
+    margin-bottom:  43px;
+}
+
+.FeatureDiv img{
+    width: 100%;
+    height: 193.5px;
+}
+
+.FeatureDiv .Overlayimg{
+    width: 100%;
+    height: 193.5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.FeatureDiv:hover .Overlayimg{
+    visibility: visible;
+}
+
+.FeatureDiv h2{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.FeatureDiv i{
+    margin-top: 30px;
+    width: 40px;
+    height: 30px;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 10px;
+    line-height: 30px;
+}
+/* ----------------- End-FeatureSec ----------------- */
+
+.OfferSec{
+    width: 100%;
+}
+
+.TitleOffer{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(128, 128, 128);
+    padding-top: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.TitleOffer::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.ContainerOffer{
+    width: 90%;
+    height: 430px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.ParentOffers{
+    width: 100%;
+    height: 100%;
+}
+.Offers{
+    width: 30%;
+    height: 193.5px;
+    padding: 20px 10px;
+    float: left;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.OfferSec .txt2, .OfferSec .txt5{
+    margin: 0 5% 0 5%;
+}
+
+.OfferSec .DivTop{
+    margin-bottom:  43px;
+}
+
+.Offers i{
+    margin-right: 10px;
+    font-size: 30px;
+    float: left;
+    color: gray;
+}
+
+.Offers div{
+    width: 250px;
+    float: left;
+}
+
+.Offers h2{
+    margin-bottom: 15px;
+    color: black;
+}
+
+.Offers p{
+    color: gray;
+}
+
+.Offers::after{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: rgba(128, 128, 128, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.Offers:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.Offers:hover h2, .Offers:hover i{
+    color: rgb(80, 80, 80)
+}
+
+.Offers:hover p{
+    color: black;
+}
+/*---------------------- End-OfferSec ------------------------------*/
+
+.ChooseSec{
+    width: 100%;
+    height: 100vh;
+}
+
+.ContainerChoose{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    font-weight: bold;
+}
+
+.TitleChoose h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+}
+
+.ParentChoose{
+    width: 40%;
+    margin-right: 5%;
+    float: left;
+}
+
+.ParentChoose li{
+    margin-top: 40px;
+    list-style: none;
+    color:rgb(100, 100, 100) ;
+}
+
+.ParentChoose i{
+    color: blueviolet;
+}
+
+.TitleChoose h2::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.TitleChoose p{
+    color: rgb(128, 128, 128);
+}
+
+.ParentImg{
+    width: 55%;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+.ParentImg img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ParentImg li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: gray;
+    margin-right: 20px;
+}
+
+.ParentImg li.active{
+    background-color: blueviolet;
+}
+
+.ParentImg li:hover{
+    background-color: blueviolet;
+}
+/*----------------------- End-ChooseSec --------------------------*/
+
+.BackgroundSec{
+    width: 100%;
+    height: 300px;
+    background: url(../images/rear-view-of-the-2025-Kia-K4-Blog-A_o.jpg) fixed center/cover;
+}
+
+.ContainerBackground{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ParentIcons{
+    width: 100%;
+}
+
+.BackgroundSec .Icons{
+    width: 14.5%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+
+.BackgroundSec .IC{
+    margin-right: 14%;
+}
+
+.ParentIcons i{
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.BackgroundSec .ParentIcons h3, .BackgroundSec .ParentIcons p{
+    color: white;
+    margin-top: 10px;
+}
+
+/*--------------------------- End-BackgroundSec -------------------------------------*/
+
+.PricingSec{
+    width: 100%;
+}
+
+.TitlePricing{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(128, 128, 128);
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.TitlePricing::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.ContainerPricing{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.ParentPricing{
+    width: 100%;
+}
+
+.Pricing{
+    width: 30%;
+    border: 1px solid gray;
+    padding: 30px 15px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.Pricing::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.5);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.Pricing2{
+    margin: 0 5%;
+}
+.PricingPara{
+    text-transform: uppercase;
+    color: black;
+}
+
+.ModelCost{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 20px auto;
+    padding: 50px 5px;
+}
+
+.Cost{
+    font-size: 40px;
+}
+
+.Model {
+    text-transform: uppercase;
+}
+
+
+.PricingPurchase{
+    width: 170px;
+    height: 30px;
+    border: 2px solid  gray;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.PricingFeatures,.PricingPurchase{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.PricingFeatures li{
+    padding: 10px 0;
+}
+
+
+.Pricing:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.Pricing:hover .ModelCost  {
+    border: 2px solid rgb(80, 80, 80); 
+    
+}
+
+.Pricing:hover .PricingPara {
+    color: rgb(80, 80, 80) ;
+}
+
+/*---------------------- End-PricingSec ----------------------------*/
+
+ .BackgroundSec1{
+    width: 100%;
+    height: 400px;
+    background: url(../images/2025-kia-k4-18-ak.jpg) fixed center/cover;
+    margin-top: 700px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.BackgroundSec1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.BackgroundSec1 .Icons{
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+}
+
+.BackgroundSec1 .ContainerBackground{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.BackgroundSec1 .ParentIcons{
+    width: 100%;
+}
+
+.BackgroundSec1 h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.BackgroundSec1 h4{
+    font-size: 20px;
+    color: blue;
+}
+
+.BackgroundSec1 p{
+    margin-top: 65px;
+    color: white;
+}
+/*------------------- End-BackgroundSec1 -----------------------------------*/
+
+.TeamSec{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+.TitleTeam{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(128, 128, 128);
+    padding-top: 150px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.TitleTeam::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.ContainerTeam{
+    width: 80%;
+    margin: auto;
+}
+
+.TeamMembers{
+    float: left;
+    width: 30%;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 10px; 
+}
+
+.Member2{
+    margin: 0px 5%;
+}
+
+.ImgIcon{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.ImgIcon img{
+    width: 100%;
+}
+
+.IconLink{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.IconLink i{
+    margin-left: auto;
+    display: block;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.TeamMembers:hover .IconLink{
+    visibility: visible;
+}
+
+.TeamNameJob{
+    text-align: center;
+    font-weight: bold;
+}
+
+.IconLink a{
+    text-decoration: none;
+}
+
+.TeamMembers::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+}
+
+
+.TeamNameJob .TeamName{
+    margin: 20px 0;
+}
+
+.TeamMembers:hover::after{
+    height: 100%;
+    transition: 0.5s;
+}
+
+.TeamMembers:hover .TeamName{
+    color: white;
+}
+
+.TeamMembers:hover .TeamJob{
+    color: rgb(80, 80, 80);
+}
+
+
+/*------------------------- End-TeamSec --------------------------------*/
+
+
+.RecentSec{
+    width: 100%;
+    height: 135vh;
+    font-weight: bold;
+}
+
+
+
+
+.RecentSec .TitleRecent{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(128, 128, 128);
+    padding-top: 150px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.TitleRecent::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.ContainerRecent{
+    width: 90%;
+    margin: auto;
+}
+
+.RecentNews{
+    float: left;
+    width: 32%;
+    border: 1px solid gray;
+    padding: 20px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px; 
+}
+
+.Recent2{
+    margin: 0px 1.5%;
+}
+
+
+
+.RecentNews img{
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.IconLink2 li{
+    display: inline;
+    margin-right: 15px;
+    color: rgb(128, 128, 128);
+}
+
+
+.IconLink2 i{
+    color: rgb(81, 81, 81);
+}
+
+
+.RecentSec a{
+    text-decoration: none;
+}
+
+.RecentNews::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background-color: rgba(200, 200, 200);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.RecentNews:hover::after{
+    height: 100%;
+    transition: 0.5s;
+}
+
+.NameJobRecent .NameRecent{
+    margin: 10px 0;
+}
+
+.NameJobRecent{
+    margin-bottom: 20px;
+}
+
+.JobRecent{
+    color: gray;
+}
+
+.readmore{
+    color: purple;
+}
+
+.RecentNews:hover .NameRecent{
+    color: white;
+}
+
+.RecentNews:hover .IconLink2 li, .RecentNews:hover .JobRecent{
+    color: black;
+}
+/*------------------------- End-RecentTeamSec --------------------------------*/
+
+.FooterSec{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(200, 200, 200);
+    margin-top: 70px;
+    padding: 25px 0;
+}
+
+.ContainerFooter{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+
+.ParentFooter{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.ParentFooter img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 65%;
+    border-radius: 10px;
+}
+
+.ParentFooter i{
+    color: white;
+    background-color: rgb(80, 80, 80);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.IconFooter{
+    margin: 20px 0;
+}
+
+.FooterSec p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ParentFooter i:hover{
+    background-color: rgb(50, 50, 50);
+    transition: 0.3s;
+}
